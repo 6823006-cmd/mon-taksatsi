@@ -1,0 +1,18 @@
+{
+  "name": "mon-tagsatsi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --load-path=node_modules --watch src/scss/main.scss src/css/main.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "bulma": "^1.0.4",
+    "sass": "^1.108.1"
+  }
+}
