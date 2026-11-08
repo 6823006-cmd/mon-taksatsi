@@ -1,33 +1,53 @@
+
 <!DOCTYPE html>
-<html lang="mn" data-theme="light"></html>
+<html lang="mn" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Мон Таксаци | Мод, суулгац</title>
 
+    <!-- Bulma CSS -->
     <link rel="stylesheet" href="./css/main.css">
 
+    <!-- Font Awesome -->
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
+
 <body>
-    <section class="section">
-        <div class="container">
-            <h1 class="title has-text-success">
-                Мон Таксаци ХХК
-            </h1>
-            <p class="subtitle">
-                Мод, суулгацын худалдаа, танилцуулгын веб сайт
-            </p>
-           
-            <button class="button is-success">
-    <span class="icon">
-        <i class="fa-solid fa-tree"></i>
-    </span>
-    <span>Бүтээгдэхүүн үзэх</span>
-</button>
+
+    <!-- Навигацийн цэс -->
+    <nav class="navbar is-success" role="navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="#/">
+                <strong>Мон Таксаци ХХК</strong>
+            </a>
         </div>
-    </section>
+
+        <div class="navbar-menu is-active" style="display: flex;">
+            <div class="navbar-start">
+                <a class="navbar-item" href="#/">Нүүр</a>
+                <a class="navbar-item" href="#/products">Бүтээгдэхүүн</a>
+                <a class="navbar-item" href="#/about">Бидний тухай</a>
+                <a class="navbar-item" href="#/care">Арчилгааны зөвлөмж</a>
+
+                <a class="navbar-item" href="#/cart">
+                    <span class="icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </span>
+                    <span>Сагс</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Хуудасны үндсэн агуулга -->
+    <main id="app" class="section">
+    </main>
+
+    <!-- SPA Router -->
+    <script type="module" src="./js/router.js"></script>
+
 </body>
 </html>
